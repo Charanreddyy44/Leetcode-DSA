@@ -1,9 +1,5 @@
-class Solution(object):
-    def missingNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
         nums.sort()
         for i in range(len(nums)):
             if nums[i] != i:
