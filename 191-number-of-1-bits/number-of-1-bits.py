@@ -6,3 +6,5 @@ class Solution(object):
             n>>=1
         return count    
         
+#Using Method
+      #  return bin(n).count('1')        
