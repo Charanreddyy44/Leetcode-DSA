@@ -6,8 +6,8 @@ class Solution(object):
         """
         even_count = 0
         for num in nums:
-            if (num & 1) == 0:  # check if last bit is 0 (even)
+            if (num & 1) == 0:  
                 even_count += 1
-                if even_count >= 2:  # found 2 evens, enough
+                if even_count >= 2:
                     return True
         return False
