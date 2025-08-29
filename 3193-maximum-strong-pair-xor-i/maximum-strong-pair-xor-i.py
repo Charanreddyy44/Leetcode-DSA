@@ -4,7 +4,7 @@ class Solution(object):
         n = len(nums)
         max_XOR = 0
         for i in range(n):
-            for j in range(n):
+            for j in range(i, n):
                 x = nums[i]
                 y = nums[j]
                 if abs(x-y) <= min(x, y):
