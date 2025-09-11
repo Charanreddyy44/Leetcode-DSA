@@ -1,5 +1,9 @@
-class Solution:
-    def sortVowels(self, s: str) -> str:
+class Solution(object):
+    def sortVowels(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
         vs = [c for c in s if c.lower() in "aeiou"]
         vs.sort()
         cs = list(s)
