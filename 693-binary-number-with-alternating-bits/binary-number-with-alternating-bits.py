@@ -4,13 +4,13 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        prev = n & 1  # last bit
+        last_bit = n & 1 
         n >>= 1
         while n > 0:
-            curr = n & 1
-            if curr == prev:   # two equal adjacent bits found
+            currnt = n & 1
+            if currnt == last_bit: 
                 return False
-            prev = curr
+            last_bit = currnt
             n >>= 1
         return True
         
