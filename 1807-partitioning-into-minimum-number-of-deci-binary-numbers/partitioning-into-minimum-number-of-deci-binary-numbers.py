@@ -1,6 +1,10 @@
 class Solution(object):
     def minPartitions(self, c):
-        
+        """
+        :type num1: int
+        :type num2: int
+        :rtype: int
+        """
         max_digit = 0
         for ch in c:
             b = ord(ch) - ord('0')
